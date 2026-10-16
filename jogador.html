@@ -1,0 +1,237 @@
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Racha Universitário | Jogador</title>
+    <meta name="description" content="Detalhes do jogador no Racha Universitário: Carta RU, valor, valorização e pontuação.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Jogador">
+    <meta property="og:description" content="Detalhes do jogador no Racha Universitário: Carta RU, valor, valorização e pontuação.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a href="home.html" class="logo">
+        <span data-app-sigla>RU</span>
+        <strong data-app-nome>Racha Universitário</strong>
+      </a>
+
+      <nav class="navigation">
+        <a href="home.html">Início</a>
+        <a href="escalar.html">Escalar</a>
+        <a href="jogadores.html" class="active">Jogadores</a>
+        <a href="rodadas.html">Rodadas</a>
+        <a href="ranking.html">Ranking</a>
+      </nav>
+
+      <a href="perfil.html" class="user-menu user-menu-link">
+        <div>
+          <strong id="playerMenuName">Usuário</strong>
+          <small id="playerMenuUsername">@usuario</small>
+        </div>
+
+        <div class="avatar" id="playerMenuAvatar">RU</div>
+      </a>
+    </header>
+
+    <main class="container">
+      <a href="jogadores.html" class="back-link">
+        ← Voltar para jogadores
+      </a>
+
+      <section class="player-details" id="playerDetails">
+        <!-- CARTA RU -->
+
+        
+<article class="ru-player-card">
+
+  <div class="ru-card-glow"></div>
+
+  <!-- TOPO -->
+  <div class="ru-card-top">
+
+    <div class="ru-card-rating">
+      <strong id="playerCardOverall">50</strong>
+      <span>OVR</span>
+    </div>
+
+    <div class="ru-card-position">
+      <strong id="playerCardPosition">-</strong>
+      <span>POS</span>
+    </div>
+
+  </div>
+
+  <!-- FOTO / AVATAR -->
+  <div class="ru-card-photo">
+
+    <div
+      class="ru-card-photo-placeholder"
+      id="playerCardAvatar"
+    >
+      -
+    </div>
+
+  </div>
+
+  <!-- NOME -->
+  <div class="ru-card-name">
+
+    <strong id="playerCardName">Jogador</strong>
+
+    <span>RACHA UNIVERSITÁRIO</span>
+
+  </div>
+
+  <!-- ATRIBUTOS -->
+  <div class="ru-card-attributes">
+
+    <div>
+      <strong id="playerCardAttack">50</strong>
+      <span>ATA</span>
+    </div>
+
+    <div>
+      <strong id="playerCardDefense">50</strong>
+      <span>DEF</span>
+    </div>
+
+    <div>
+      <strong id="playerCardSkill">50</strong>
+      <span>HAB</span>
+    </div>
+
+  </div>
+
+  <!-- ASSINATURA -->
+  <div class="ru-card-footer">
+
+    <span>RU</span>
+
+    <small>CARTA DE JOGADOR</small>
+
+  </div>
+
+</article>
+
+
+        <!-- INFORMAÇÕES -->
+
+        <div class="player-information">
+          <span class="position" id="playerPosition">-</span>
+
+          <h1 id="playerName">Jogador</h1>
+
+          <p>
+            Acompanhe o desempenho, valor e evolução
+            do jogador no Racha Universitário.
+          </p>
+
+          <div class="player-summary">
+            <article class="card">
+              <small>Valor atual</small>
+              <strong id="playerValue">RU$ 0,00</strong>
+            </article>
+
+            <article class="card">
+              <small>Valorização</small>
+              <strong id="playerVariation">RU$ 0,00</strong>
+            </article>
+
+            <article class="card">
+              <small>Pontuação</small>
+              <strong id="playerPoints">0,0 pts</strong>
+            </article>
+          </div>
+
+          <article class="card last-round">
+            <span class="eyebrow">DESEMPENHO</span>
+
+            <div class="last-round-heading">
+              <div>
+                <h2>Estatísticas do jogador</h2>
+                <p>Dados demonstrativos do protótipo</p>
+              </div>
+
+              <strong id="playerLastPoints">0,0 pts</strong>
+            </div>
+
+            <p>
+              Os scouts detalhados serão registrados
+              nas rodadas pelo sistema definitivo.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ATRIBUTOS -->
+
+      <section class="attributes-section">
+        <div class="section-title">
+          <div>
+            <h2>Atributos</h2>
+            <p>Características atuais da Carta RU.</p>
+          </div>
+        </div>
+
+        <div class="attributes-grid">
+          <div class="attribute">
+            <div>
+              <span>ATA — Ataque</span>
+              <strong id="playerAttackValue">50</strong>
+            </div>
+
+            <div class="attribute-background">
+              <div id="playerAttackBar" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="attribute">
+            <div>
+              <span>DEF — Defesa</span>
+              <strong id="playerDefenseValue">50</strong>
+            </div>
+
+            <div class="attribute-background">
+              <div id="playerDefenseBar" style="width: 50%"></div>
+            </div>
+          </div>
+
+          <div class="attribute">
+            <div>
+              <span>HAB — Habilidade</span>
+              <strong id="playerSkillValue">50</strong>
+            </div>
+
+            <div class="attribute-background">
+              <div id="playerSkillBar" style="width: 50%"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/jogadores.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/jogador.js"></script>
+  </body>
+</html>

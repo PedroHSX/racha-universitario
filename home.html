@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Racha Universitário | Início</title>
+    <meta name="description" content="Painel do Racha Universitário: rodada atual, situação da escalação, desempenho e destaques.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Início">
+    <meta property="og:description" content="Painel do Racha Universitário: rodada atual, situação da escalação, desempenho e destaques.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a href="home.html" class="logo">
+        <span data-app-sigla>RU</span>
+        <strong data-app-nome>Racha Universitário</strong>
+      </a>
+
+      <nav class="navigation">
+        <a href="home.html" class="active">Início</a>
+        <a href="escalar.html">Escalar</a>
+        <a href="jogadores.html">Jogadores</a>
+        <a href="rodadas.html">Rodadas</a>
+        <a href="ranking.html">Ranking</a>
+      </nav>
+
+      <a href="perfil.html" class="user-menu user-menu-link">
+        <div>
+          <strong id="homeUserName">Usuário</strong>
+          <small id="homeUsername">@usuario</small>
+        </div>
+
+        <div class="avatar" id="homeUserAvatar">RU</div>
+      </a>
+    </header>
+
+    <main class="container">
+      <section class="page-header">
+        <div>
+          <h1 id="homeGreeting">Olá!</h1>
+          <p>Acompanhe sua escalação e seu desempenho no fantasy.</p>
+        </div>
+
+        <span class="round-label"> RODADA 06 </span>
+      </section>
+
+      <section class="home-grid">
+        <article class="card current-round">
+          <div class="card-heading">
+            <div>
+              <span class="eyebrow">RODADA ATUAL</span>
+              <h2>Rodada 06</h2>
+            </div>
+
+            <span class="status open">ABERTA</span>
+          </div>
+
+          <h3 id="homeLineupStatus">Sua escalação está quase pronta</h3>
+
+            <p id="homeLineupMessage">Complete as posições restantes antes do encerramento.</p>
+
+          <div class="progress-info">
+            <span id="homeLineupCount">0 de 7 jogadores</span>
+            <span id="homeLineupPercentage">0%</span>
+          </div>
+
+          <div class="progress">
+  <div class="progress-bar" id="homeProgressBar"></div>
+</div>
+
+<div class="round-bottom">
+            <div>
+              <small>Prazo</small>
+              <strong>18:30</strong>
+            </div>
+
+            <div>
+              <small>Disponível</small>
+              <strong id="homeBudgetAvailable">RU$ 0,00</strong>
+            </div>
+
+            <a href="escalar.html" class="btn-primary link-button">CONTINUAR ESCALAÇÃO</a>
+          </div>
+        </article>
+
+        <article class="card performance">
+          <span class="eyebrow">SEU DESEMPENHO</span>
+
+          <div class="performance-grid">
+            <div>
+              <strong>6º</strong>
+              <span>Ranking geral</span>
+            </div>
+
+            <div>
+              <strong>327,4</strong>
+              <span>Pontos</span>
+            </div>
+
+            <div>
+              <strong>65,5</strong>
+              <span>Média</span>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section class="content-grid">
+
+  <!-- ESCALAÇÃO -->
+  <div class="home-lineup-area">
+
+    <div class="section-title">
+      <div>
+        <h2>Sua escalação</h2>
+        <p id="homeLineupSubtitle">
+          Rodada 06 • 0 de 7 jogadores
+        </p>
+      </div>
+
+      <a href="escalar.html">
+        Editar escalação →
+      </a>
+    </div>
+
+    <div class="field" id="homeField">
+
+      <div class="field-line center-line"></div>
+
+      <div class="center-circle"></div>
+
+      <div id="homeFormationContainer"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- DESTAQUES -->
+<aside class="highlights">
+
+  <div class="section-title">
+    <div>
+      <h2>Destaques</h2>
+      <p>Última rodada</p>
+    </div>
+  </div>
+
+  <div id="homeHighlights"></div>
+
+</aside>
+
+</section>
+      
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/jogadores.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

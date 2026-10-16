@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Racha Universitário | Escalar</title>
+    <meta name="description" content="Monte sua escalação no Racha Universitário: 1 goleiro e 6 jogadores de linha, escolha a formação e controle o orçamento em RUCoin.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Escalar">
+    <meta property="og:description" content="Monte sua escalação no Racha Universitário: 1 goleiro e 6 jogadores de linha, escolha a formação e controle o orçamento em RUCoin.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <a href="home.html" class="logo">
+        <span data-app-sigla>RU</span>
+        <strong data-app-nome>Racha Universitário</strong>
+    </a>
+
+    <nav class="navigation">
+        <a href="home.html">Início</a>
+        <a href="escalar.html" class="active">Escalar</a>
+        <a href="jogadores.html">Jogadores</a>
+        <a href="rodadas.html">Rodadas</a>
+        <a href="ranking.html">Ranking</a>
+    </nav>
+
+    <a href="perfil.html" class="user-menu user-menu-link">
+
+    <div>
+        <strong>Usuário</strong>
+        <small>@usuario</small>
+    </div>
+
+    <div class="avatar">RU</div>
+
+    </a>
+
+</header>
+
+<main class="container">
+
+    <section class="page-header">
+
+        <div>
+            <h1>Escalar</h1>
+            <p>Monte sua escalação para a Rodada 06.</p>
+        </div>
+
+        <div class="round-status">
+            <span class="status open">ABERTA</span>
+            <span>Prazo: 18:30</span>
+        </div>
+
+    </section>
+
+
+    <section class="lineup-layout">
+
+    <!-- COLUNA ESQUERDA -->
+    <div class="lineup-main">
+
+        <div class="section-title lineup-title">
+
+            <div>
+                <h2>Sua escalação</h2>
+                <p>
+                    Selecione uma posição vazia para adicionar um jogador.
+                </p>
+            </div>
+
+            <div class="formation-selector">
+
+                <label for="formation-select">
+                    Formação
+                </label>
+
+                <select id="formation-select">
+                    <!-- As formações serão inseridas pelo JavaScript -->
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <div class="field large-field" id="lineup-field">
+
+            <div class="field-line center-line"></div>
+
+            <div class="center-circle"></div>
+
+            <div id="formation-container">
+                <!-- A formação será gerada pelo JavaScript -->
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PAINEL LATERAL -->
+    <aside class="card lineup-panel">
+
+        <div class="card-heading">
+
+            <div>
+                <span class="eyebrow">RODADA</span>
+                <h2>Rodada 06</h2>
+            </div>
+
+            <span class="status open">
+                ABERTA
+            </span>
+
+        </div>
+
+
+        <p>
+            Prazo para escalar:
+            <strong>18:30</strong>
+        </p>
+
+
+        <hr>
+
+
+        <h3>Sua escalação</h3>
+
+
+        <div class="progress-info">
+
+            <span id="lineup-count">
+                0 de 7 jogadores
+            </span>
+
+            <span id="lineup-percentage">
+                0%
+            </span>
+
+        </div>
+
+
+        <div class="progress">
+
+            <div
+                class="progress-bar"
+                id="lineup-progress"
+            ></div>
+
+        </div>
+
+
+        <p
+            class="muted"
+            id="lineup-missing"
+        >
+            Faltam 7 jogadores.
+        </p>
+
+
+        <hr>
+
+
+        <h3>Orçamento</h3>
+
+
+        <div class="budget-row">
+
+            <span>Total</span>
+
+            <strong id="budget-total">
+                RU$ 90,00
+            </strong>
+
+        </div>
+
+
+        <div class="budget-row">
+
+            <span>Utilizado</span>
+
+            <strong id="budget-used">
+                RU$ 0,00
+            </strong>
+
+        </div>
+
+
+        <div class="budget-row">
+
+            <span>Disponível</span>
+
+            <strong
+                class="positive"
+                id="budget-available"
+            >
+                RU$ 90,00
+            </strong>
+
+        </div>
+
+
+        <button type="button"
+            class="btn-disabled"
+            id="confirm-lineup"
+            disabled
+        >
+            CONFIRMAR ESCALAÇÃO
+        </button>
+
+
+        <small
+            class="muted"
+            id="confirm-message"
+        >
+            Complete os 7 jogadores para confirmar.
+        </small>
+
+    </aside>
+
+</section>
+
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/jogadores.js"></script>
+<script src="js/script.js"></script>
+<script src="js/escalar.js"></script>
+
+</body>
+</html>

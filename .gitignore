@@ -1,0 +1,42 @@
+# ===== Sistema operacional =====
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ===== Editores e IDEs =====
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-workspace
+
+# ===== Dependências e builds (para a versão definitiva) =====
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+
+# ===== Logs e temporários =====
+*.log
+npm-debug.log*
+*.tmp
+*.bak
+*.orig
+
+# ===== Segredos (nunca publicar) =====
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ===== Pacotes e backups locais =====
+*.zip
+*.rar
+*.7z

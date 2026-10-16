@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Racha Universitário | Rodadas</title>
+    <meta name="description" content="Rodada atual e histórico de rodadas do Racha Universitário.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Rodadas">
+    <meta property="og:description" content="Rodada atual e histórico de rodadas do Racha Universitário.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a href="home.html" class="logo">
+  <span data-app-sigla>RU</span>
+  <strong data-app-nome>Racha Universitário</strong>
+</a>
+
+      <nav class="navigation">
+        <a href="home.html">Início</a>
+        <a href="escalar.html">Escalar</a>
+        <a href="jogadores.html">Jogadores</a>
+        <a href="rodadas.html" class="active">Rodadas</a>
+        <a href="ranking.html">Ranking</a>
+      </nav>
+
+      <a href="perfil.html" class="user-menu user-menu-link">
+        <div>
+          <strong>Usuário</strong>
+          <small>@usuario</small>
+        </div>
+
+        <div class="avatar">RU</div>
+      </a>
+    </header>
+
+    <main class="container">
+      <section class="page-header">
+        <div>
+          <h1>Rodadas</h1>
+          <p>
+            Acompanhe a rodada atual e consulte seu desempenho nas rodadas
+            anteriores.
+          </p>
+        </div>
+      </section>
+
+      <!-- RODADA ATUAL -->
+
+      <section class="round-current-card">
+        <div class="round-current-info">
+          <div class="card-heading">
+            <div>
+              <span class="eyebrow">RODADA ATUAL</span>
+              <h2>Rodada 06</h2>
+            </div>
+
+            <span class="status open"> ABERTA </span>
+          </div>
+
+         <h3 id="round-lineup-title">Prepare sua escalação</h3>
+
+<p id="round-lineup-message">
+  Sua escalação ainda possui posições disponíveis. Complete os 7
+  jogadores antes do encerramento.
+</p>
+
+          <div class="round-details-grid">
+            <div>
+              <span>Prazo</span>
+              <strong>18:30</strong>
+            </div>
+
+            <div>
+  <span>Escalação</span>
+  <strong id="round-lineup-count">0 / 7</strong>
+</div>
+
+<div>
+  <span>Disponível</span>
+  <strong
+    id="round-budget-available"
+    class="positive"
+  >
+    RU$ 90,00
+  </strong>
+</div>
+
+<a
+  href="escalar.html"
+  class="btn-primary link-button"
+  id="round-lineup-button"
+>
+  CONTINUAR ESCALAÇÃO
+</a>
+
+          </div>
+        </div>
+
+        <div class="round-number-decoration">06</div>
+      </section>
+
+      <!-- HISTÓRICO -->
+
+      <section class="round-history">
+        <div class="section-title">
+          <div>
+            <h2>Rodadas anteriores</h2>
+            <p>Seu histórico no Racha Universitário.</p>
+          </div>
+        </div>
+        <div class="rounds-grid" id="rounds-history-list">
+
+        </div>
+        
+      </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/jogadores.js"></script>
+    <script src="js/rodadas-data.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/rodadas.js"></script>
+  </body>
+</html>

@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Racha Universitário | Configurações</title>
+    <meta name="description" content="Configurações da conta no Racha Universitário: dados pessoais, notificações e segurança.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Configurações">
+    <meta property="og:description" content="Configurações da conta no Racha Universitário: dados pessoais, notificações e segurança.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a href="home.html" class="logo">
+        <span data-app-sigla>RU</span>
+          <strong data-app-nome>Racha Universitário</strong>
+      </a>
+
+      <nav class="navigation">
+        <a href="home.html">Início</a>
+        <a href="escalar.html">Escalar</a>
+        <a href="jogadores.html">Jogadores</a>
+        <a href="rodadas.html">Rodadas</a>
+        <a href="ranking.html">Ranking</a>
+      </nav>
+
+      <a href="perfil.html" class="user-menu user-menu-link">
+        <div>
+          <strong>Usuário</strong>
+          <small>@usuario</small>
+        </div>
+
+        <div class="avatar">RU</div>
+      </a>
+    </header>
+
+    <main class="container">
+      <a href="perfil.html" class="back-link"> ← Voltar para o perfil </a>
+
+      <section class="page-header">
+        <div>
+          <h1>Configurações</h1>
+
+          <p>Gerencie suas informações e preferências.</p>
+        </div>
+      </section>
+
+      <section class="settings-layout">
+        <!-- MENU LATERAL -->
+
+        <aside class="settings-menu">
+          <button type="button" class="settings-menu-item active" data-settings="account">
+            Minha conta
+          </button>
+
+          <button type="button" class="settings-menu-item" data-settings="notifications">
+            Notificações
+          </button>
+
+          <button type="button" class="settings-menu-item" data-settings="security">
+            Segurança
+          </button>
+        </aside>
+
+        <!-- CONTEÚDO -->
+
+        <div class="settings-content">
+          <!-- CONTA -->
+
+          <section class="settings-panel active" id="settings-account">
+            <h2>Minha conta</h2>
+
+            <p>Atualize as informações do seu perfil.</p>
+
+            <form class="settings-form" id="profileForm" novalidate>
+              
+<div class="settings-form-group">
+  <label for="profileName">Nome</label>
+
+  <input
+    type="text"
+    id="profileName"
+    autocomplete="name"
+    required
+  />
+</div>
+
+<div class="settings-form-group">
+  <label for="profileUsername">Nome de usuário</label>
+
+  <input
+    type="text"
+    id="profileUsername"
+    autocomplete="username"
+    required
+  />
+</div>
+
+<div class="settings-form-group">
+  <label for="profileEmail">E-mail</label>
+
+  <input
+    type="email"
+    id="profileEmail"
+    autocomplete="email"
+    required
+  />
+</div>
+
+
+              <button type="submit" class="btn-primary">
+                SALVAR ALTERAÇÕES
+              </button>
+
+              <span class="settings-message" id="settingsMessage"></span>
+            </form>
+          </section>
+
+          <!-- NOTIFICAÇÕES -->
+
+          <section class="settings-panel" id="settings-notifications">
+            <h2>Notificações</h2>
+
+            <p>Escolha quais avisos deseja receber.</p>
+
+            <div class="notification-option">
+              <div>
+                <strong> Prazo da rodada </strong>
+
+                <span> Receber aviso antes do fechamento da escalação. </span>
+              </div>
+
+              <label class="switch">
+                <input
+  type="checkbox"
+  id="notificationDeadline"
+  checked
+/>
+
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="notification-option">
+              <div>
+                <strong> Resultado da rodada </strong>
+
+                <span>
+                  Receber aviso quando os resultados forem publicados.
+                </span>
+              </div>
+
+              <label class="switch">
+                <input type="checkbox" id="notificationResults" checked/>
+
+                <span class="slider"></span>
+              </label>
+            </div>
+
+            <div class="notification-option">
+              <div>
+                <strong> Alteração no ranking </strong>
+
+                <span> Receber atualizações sobre sua classificação. </span>
+              </div>
+
+              <label class="switch">
+<input
+  type="checkbox"
+  id="notificationRanking"
+/>
+                <span class="slider"></span>
+              </label>
+            </div>
+            <span
+  class="settings-message"
+  id="notificationMessage"
+></span>
+          </section>
+
+          <!-- SEGURANÇA -->
+
+          <section class="settings-panel" id="settings-security">
+            <h2>Segurança</h2>
+
+            <p>Atualize sua senha de acesso.</p>
+
+            <form class="settings-form" id="securityForm">
+              <div class="settings-form-group">
+                <label for="currentPassword"> Senha atual </label>
+
+                <input
+  type="password"
+  id="currentPassword"
+  placeholder="Digite sua senha atual"
+  autocomplete="current-password"
+/>
+              </div>
+
+              <div class="settings-form-group">
+                <label for="newPassword"> Nova senha </label>
+
+                <input
+  type="password"
+  id="newPassword"
+  placeholder="Digite a nova senha"
+  autocomplete="new-password"
+/>
+              </div>
+
+              <div class="settings-form-group">
+                <label for="confirmNewPassword"> Confirmar nova senha </label>
+
+                <input
+  type="password"
+  id="confirmNewPassword"
+  placeholder="Digite novamente"
+  autocomplete="new-password"
+/>
+              </div>
+
+              <button type="submit" class="btn-primary">
+  ALTERAR SENHA
+</button>
+
+<span
+  class="settings-message"
+  id="securityMessage"
+></span>
+            </form>
+
+            <div class="danger-zone">
+              <h3>Sair da conta</h3>
+
+              <p>Encerre sua sessão atual no Racha Universitário.</p>
+
+              <a href="index.html" class="logout-button"> SAIR DA CONTA </a>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/jogadores.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

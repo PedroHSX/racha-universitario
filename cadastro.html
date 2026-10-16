@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Racha Universitário | Criar conta</title>
+    <meta name="description" content="Crie sua conta no Racha Universitário (RU) e monte sua escalação de 7 jogadores a cada rodada. Protótipo acadêmico.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Criar conta">
+    <meta property="og:description" content="Crie sua conta no Racha Universitário (RU) e monte sua escalação de 7 jogadores a cada rodada. Protótipo acadêmico.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="auth-body">
+    <main class="register-page">
+      <!-- LADO ESQUERDO -->
+
+      <section class="register-brand">
+        <a href="index.html" class="logo register-logo">
+          <span data-app-sigla>RU</span>
+          <strong data-app-nome>Racha Universitário</strong>
+        </a>
+
+        <div class="register-brand-content">
+          <span class="eyebrow"> FUTEBOL UNIVERSITÁRIO </span>
+
+          <h1>
+            Monte sua escalação.
+            <span>Dispute o ranking.</span>
+          </h1>
+
+          <p>
+            Crie sua conta para participar do Racha Universitário, acompanhar jogadores
+            e montar sua escalação a cada rodada.
+          </p>
+
+          <div class="register-features">
+            <div class="register-feature">
+              <div class="register-feature-icon">01</div>
+
+              <div>
+                <strong>Monte sua escalação</strong>
+                <span> Escolha 7 jogadores a cada rodada. </span>
+              </div>
+            </div>
+
+            <div class="register-feature">
+              <div class="register-feature-icon">02</div>
+
+              <div>
+                <strong>Acompanhe os jogadores</strong>
+                <span> Consulte cards, OVR e estatísticas. </span>
+              </div>
+            </div>
+
+            <div class="register-feature">
+              <div class="register-feature-icon">03</div>
+
+              <div>
+                <strong>Suba no ranking</strong>
+                <span> Some pontos com o desempenho da sua escalação. </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FORMULÁRIO -->
+
+      <section class="register-form-side">
+        <div class="register-form-container">
+          <a href="index.html" class="back-link"> ← Voltar para o login </a>
+
+          <div class="register-heading">
+            <span class="eyebrow"> NOVA CONTA </span>
+
+            <h2>Criar conta</h2>
+
+            <p>Preencha seus dados para participar do Racha Universitário.</p>
+          </div>
+
+          <form class="register-form" id="registerForm" novalidate>
+            <!-- NOME -->
+
+            <div class="register-field">
+              <label for="registerName"> Nome completo </label>
+
+              <input
+                type="text"
+                id="registerName"
+                placeholder="Ex.: Maria da Silva"
+                autocomplete="name"
+              />
+
+              <span class="form-error"></span>
+            </div>
+
+            <!-- USUÁRIO -->
+
+            <div class="register-field">
+              <label for="registerUsername"> Nome de usuário </label>
+
+              <div class="username-input">
+                <span>@</span>
+
+                <input
+                  type="text"
+                  id="registerUsername"
+                  placeholder="mariasilva"
+                  autocomplete="username"
+                />
+              </div>
+
+              <span class="form-error"></span>
+            </div>
+
+            <!-- EMAIL -->
+
+            <div class="register-field">
+              <label for="registerEmail"> E-mail </label>
+
+              <input
+                type="email"
+                id="registerEmail"
+                placeholder="seuemail@exemplo.com"
+                autocomplete="email"
+              />
+
+              <span class="form-error"></span>
+            </div>
+
+            <!-- SENHAS -->
+
+<div class="register-two-columns">
+  <div class="register-field">
+    <label for="registerPassword">Senha</label>
+
+    <div class="password-field">
+      <input
+        type="password"
+        id="registerPassword"
+        placeholder="Mínimo 8 caracteres"
+        autocomplete="new-password"
+      />
+
+      <button
+        type="button"
+        class="password-toggle"
+        data-password-target="registerPassword"
+      >
+        Mostrar
+      </button>
+    </div>
+
+    <span class="form-error"></span>
+  </div>
+
+  <div class="register-field">
+    <label for="registerConfirmPassword">Confirmar senha</label>
+
+    <div class="password-field">
+      <input
+        type="password"
+        id="registerConfirmPassword"
+        placeholder="Repita sua senha"
+        autocomplete="new-password"
+      />
+
+      <button
+        type="button"
+        class="password-toggle"
+        data-password-target="registerConfirmPassword"
+      >
+        Mostrar
+      </button>
+    </div>
+
+    <span class="form-error"></span>
+  </div>
+</div>
+
+            <!-- PARTICIPAÇÃO NA PELADA -->
+
+<div class="register-player-section">
+  <div class="register-field">
+    <label id="playerParticipationLabel">Você também participa das peladas da UPE?</label>
+
+    <div
+      class="register-player-options"
+      role="radiogroup"
+      aria-labelledby="playerParticipationLabel"
+      aria-describedby="playerParticipationError"
+    >
+      <label>
+        <input
+          type="radio"
+          name="playerParticipation"
+          value="sim"
+          id="playerYes"
+        />
+
+        <span>Sim, também sou jogador</span>
+      </label>
+
+      <label>
+        <input
+          type="radio"
+          name="playerParticipation"
+          value="nao"
+          id="playerNo"
+        />
+
+        <span>Não, quero apenas jogar o fantasy</span>
+      </label>
+    </div>
+
+    <span class="form-error" id="playerParticipationError"></span>
+  </div>
+</div>
+
+<!-- DADOS DO JOGADOR -->
+
+<div class="register-player-data" id="playerData" hidden>
+  <div class="register-field">
+    <label for="registerPosition">Posição principal</label>
+
+    <select id="registerPosition">
+      <option value="">Selecione sua posição</option>
+      <option value="GOL">Goleiro</option>
+      <option value="DEF">Defensor</option>
+      <option value="MEI">Meio-campista</option>
+      <option value="ATA">Atacante</option>
+    </select>
+
+    <span class="form-error"></span>
+  </div>
+
+  <div class="register-two-columns">
+    <div class="register-field">
+      <label for="registerHeight">Altura</label>
+
+      <input
+        type="number"
+        id="registerHeight"
+        placeholder="Ex.: 1,75"
+        min="1.4"
+        max="2.2"
+        step="0.01"
+      />
+
+      <span class="form-error"></span>
+    </div>
+
+    <div class="register-field">
+      <label for="registerWeight">Peso (kg)</label>
+
+      <input
+        type="number"
+        id="registerWeight"
+        placeholder="Ex.: 70"
+        min="40"
+        max="150"
+        step="0.1"
+      />
+
+      <span class="form-error"></span>
+    </div>
+  </div>
+</div>
+
+            <!-- TERMOS -->
+
+            <label class="register-checkbox">
+              <input type="checkbox" id="registerTerms" />
+
+              <span> Concordo com os termos de uso do Racha Universitário. </span>
+            </label>
+
+            <span class="form-error terms-error" id="termsError"></span>
+
+            <!-- BOTÃO -->
+
+            <button type="submit" class="btn-primary register-submit">
+              CRIAR CONTA
+            </button>
+
+            <div class="register-success" id="registerSuccess">
+              <div>✓</div>
+
+              <strong>Conta criada!</strong>
+
+              <span> Redirecionando para o login... </span>
+            </div>
+          </form>
+
+          <p class="register-login">
+            Já possui uma conta?
+
+            <a href="index.html"> Entrar </a>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/jogadores.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Racha Universitário | Jogadores</title>
+    <meta name="description" content="Consulte os jogadores do Racha Universitário: posição, OVR, valor em RUCoin e pontuação.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Jogadores">
+    <meta property="og:description" content="Consulte os jogadores do Racha Universitário: posição, OVR, valor em RUCoin e pontuação.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a href="home.html" class="logo">
+  <span data-app-sigla>RU</span>
+  <strong data-app-nome>Racha Universitário</strong>
+</a>
+
+      <nav class="navigation">
+        <a href="home.html">Início</a>
+        <a href="escalar.html">Escalar</a>
+        <a href="jogadores.html" class="active">Jogadores</a>
+        <a href="rodadas.html">Rodadas</a>
+        <a href="ranking.html">Ranking</a>
+      </nav>
+
+      <a href="perfil.html" class="user-menu user-menu-link">
+        <div>
+          <strong>Usuário</strong>
+          <small>@usuario</small>
+        </div>
+
+        <div class="avatar">RU</div>
+      </a>
+    </header>
+
+    <main class="container">
+      <section class="page-header">
+        <div>
+          <h1>Jogadores</h1>
+          <p>Conheça os jogadores da pelada e acompanhe seus desempenhos.</p>
+        </div>
+      </section>
+
+      <section class="filters">
+        <input
+          type="search"
+          id="playerSearch"
+          placeholder="Buscar jogador..."
+        />
+
+        <div class="filter-buttons">
+          <button type="button" class="filter active" data-position="TODOS">Todos</button>
+          <button type="button" class="filter" data-position="GOL">GOL</button>
+          <button type="button" class="filter" data-position="DEF">DEF</button>
+          <button type="button" class="filter" data-position="MEI">MEI</button>
+          <button type="button" class="filter" data-position="ATA">ATA</button>
+        </div>
+      </section>
+
+        <section id="featuredSection">
+  <div class="section-title">
+    <div>
+      <h2>Destaques</h2>
+      <p>Jogadores em evidência</p>
+    </div>
+  </div>
+
+  <div class="featured-players" id="featuredPlayers"></div>
+</section>
+
+      <section class="players-section">
+        <div class="section-title">
+          <div>
+            <h2>Todos os jogadores</h2>
+            <p>Consulte OVR, pontuação e valor.</p>
+          </div>
+        </div>
+
+        <div id="playersList" class="players-list"></div>
+      </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/jogadores.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

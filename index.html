@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Racha Universitário | Login</title>
+    <meta name="description" content="Entre no Racha Universitário (RU), o fantasy football do futebol amador universitário da UPE. Protótipo acadêmico.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Login">
+    <meta property="og:description" content="Entre no Racha Universitário (RU), o fantasy football do futebol amador universitário da UPE. Protótipo acadêmico.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="login-body">
+
+    <main class="login-page">
+
+        
+<section class="login-presentation">
+
+    <div class="logo login-logo">
+        <span data-app-sigla></span>
+        <strong data-app-nome></strong>
+    </div>
+
+    <div class="presentation-content">
+
+        <h1>
+            Monte sua escalação.<br>
+            Acompanhe os jogadores.<br>
+            <span>Dispute o ranking.</span>
+        </h1>
+
+        <p>
+            Transforme o desempenho dos jogadores da pelada
+            em uma experiência fantasy.
+        </p>
+
+        <div class="preview-cards">
+
+            <div class="preview-player side-card">
+                <span class="preview-ovr">83</span>
+                <div class="fake-photo">PH</div>
+                <strong>Pedro Henrique</strong>
+                <small>MEI</small>
+            </div>
+
+            <div class="preview-player main-card">
+                <span class="preview-ovr">85</span>
+                <div class="fake-photo">BS</div>
+                <strong>Bruno Soares</strong>
+                <small>ATA</small>
+                <span class="points">11,8 pts</span>
+            </div>
+
+            <div class="preview-player side-card">
+                <span class="preview-ovr">81</span>
+                <div class="fake-photo">AM</div>
+                <strong>Allan Maia</strong>
+                <small>DEF</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <section class="login-area">
+
+            <form class="login-form" id="loginForm">
+
+                <div class="mobile-brand">
+    <span data-app-sigla></span>
+    <strong data-app-nome></strong>
+</div>
+
+                <h2>Bem-vindo!</h2>
+
+                <p>
+                    Entre na sua conta para continuar.
+                </p>
+
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seuemail@exemplo.com" autocomplete="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" autocomplete="current-password" required>
+                </div>
+
+                <p class="login-error-message" id="loginErrorMessage"></p>
+
+                <div class="login-success-message" id="loginSuccessMessage">
+                    ✓ Conta criada com sucesso. Faça seu login.
+                    </div>
+
+                <button class="btn-primary" type="submit">
+                    ENTRAR
+                </button>
+
+                <p class="register-text">
+                    Não possui uma conta?
+                    <a href="cadastro.html">Criar conta</a>
+                </p>
+
+            </form>
+
+        </section>
+
+    </main>
+
+<script src="js/config.js"></script>
+<script src="js/jogadores.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>

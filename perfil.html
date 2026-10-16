@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Racha Universitário | Perfil</title>
+    <meta name="description" content="Seu perfil no Racha Universitário: Carta RU, dados do jogador e desempenho recente.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Perfil">
+    <meta property="og:description" content="Seu perfil no Racha Universitário: Carta RU, dados do jogador e desempenho recente.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a href="home.html" class="logo">
+        <span data-app-sigla>RU</span>
+        <strong data-app-nome>Racha Universitário</strong>
+      </a>
+
+      <nav class="navigation">
+        <a href="home.html">Início</a>
+        <a href="escalar.html">Escalar</a>
+        <a href="jogadores.html">Jogadores</a>
+        <a href="rodadas.html">Rodadas</a>
+        <a href="ranking.html">Ranking</a>
+      </nav>
+
+      <a href="perfil.html" class="user-menu user-menu-link">
+        <div>
+          <strong id="profileMenuName">Usuário</strong>
+          <small id="profileMenuUsername">@usuario</small>
+        </div>
+
+        <div class="avatar" id="profileMenuAvatar">RU</div>
+      </a>
+    </header>
+
+    <main class="container">
+      <!-- PERFIL PRINCIPAL -->
+
+      <section class="profile-header-card">
+        <div class="profile-avatar" id="profileAvatar">RU</div>
+
+        <div class="profile-main-info">
+          <h1 id="profileName">Usuário</h1>
+
+          <span class="profile-username" id="profileUsername">@usuario</span>
+
+          <p id="profileDescription">Participante do Racha Universitário.</p>
+        </div>
+
+        <a href="configuracoes.html" class="profile-settings-button">
+          Configurações
+        </a>
+      </section>
+
+      <!-- DADOS DO JOGADOR -->
+
+<!-- PERFIL ESPORTIVO / CARTA RU -->
+
+<section class="profile-player-card" id="profilePlayerCard" hidden>
+
+  <div class="section-title ru-player-section-title">
+    <div>
+      <span class="eyebrow">JOGADOR</span>
+      <h2>Perfil esportivo</h2>
+      <p>Sua identidade como jogador das peladas.</p>
+    </div>
+  </div>
+
+
+  <div class="ru-player-profile">
+
+    <!-- CARTA RU -->
+    <div class="ru-card-wrapper">
+
+      
+<!-- CARTA RU -->
+
+<article class="ru-player-card">
+
+  <div class="ru-card-glow"></div>
+
+  <!-- TOPO -->
+  <div class="ru-card-top">
+
+    <div class="ru-card-rating">
+      <strong id="playerCardOverall">50</strong>
+      <span>OVR</span>
+    </div>
+
+    <div class="ru-card-position">
+      <strong id="playerCardPosition">-</strong>
+      <span>POS</span>
+    </div>
+
+  </div>
+
+  <!-- FOTO / AVATAR -->
+  <div class="ru-card-photo">
+
+    <div
+      class="ru-card-photo-placeholder"
+      id="playerCardAvatar"
+    >
+      -
+    </div>
+
+  </div>
+
+  <!-- NOME -->
+  <div class="ru-card-name">
+
+    <strong id="playerCardName">
+      Jogador
+    </strong>
+
+    <span>RACHA UNIVERSITÁRIO</span>
+
+  </div>
+
+  <!-- ATRIBUTOS -->
+  <div class="ru-card-attributes">
+
+    <div>
+      <strong id="playerCardAttack">50</strong>
+      <span>ATA</span>
+    </div>
+
+    <div>
+      <strong id="playerCardDefense">50</strong>
+      <span>DEF</span>
+    </div>
+
+    <div>
+      <strong id="playerCardSkill">50</strong>
+      <span>HAB</span>
+    </div>
+
+  </div>
+
+  <!-- ASSINATURA -->
+  <div class="ru-card-footer">
+
+    <span>RU</span>
+
+    <small>CARTA DE JOGADOR</small>
+
+  </div>
+
+</article>
+
+
+    </div>
+
+
+    <!-- DADOS DO JOGADOR -->
+    <div class="ru-player-details">
+
+      <div class="ru-player-details-heading">
+
+        <span class="eyebrow">
+          DADOS DO JOGADOR
+        </span>
+
+        <h3 id="profilePlayerDetailsName">
+          Usuário
+        </h3>
+
+        <p>
+          Informações cadastradas para participação nas peladas.
+        </p>
+
+      </div>
+
+
+      <div class="ru-player-info-grid">
+
+        <div class="ru-player-info-item">
+
+          <span>Posição</span>
+
+          <strong id="profilePlayerPosition">
+            -
+          </strong>
+
+        </div>
+
+
+        <div class="ru-player-info-item">
+
+          <span>Altura</span>
+
+          <strong id="profilePlayerHeight">
+            -
+          </strong>
+
+        </div>
+
+
+        <div class="ru-player-info-item">
+
+          <span>Peso</span>
+
+          <strong id="profilePlayerWeight">
+            -
+          </strong>
+
+        </div>
+
+
+        <div class="ru-player-info-item featured">
+
+          <span>Overall</span>
+
+          <strong id="profilePlayerOverall">
+            50
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <div class="ru-attribute-summary">
+
+        <div class="ru-attribute-summary-title">
+
+          <span>Atributos da carta</span>
+
+          <small>OVR atual</small>
+
+        </div>
+
+
+        <div class="ru-attribute-row">
+
+          <span>ATA</span>
+
+          <div class="ru-attribute-track">
+            <div
+              class="ru-attribute-fill"
+              id="profileAttackBar"
+              style="width: 50%"
+            ></div>
+          </div>
+
+          <strong id="profileAttackValue">
+            50
+          </strong>
+
+        </div>
+
+
+        <div class="ru-attribute-row">
+
+          <span>DEF</span>
+
+          <div class="ru-attribute-track">
+            <div
+              class="ru-attribute-fill"
+              id="profileDefenseBar"
+              style="width: 50%"
+            ></div>
+          </div>
+
+          <strong id="profileDefenseValue">
+            50
+          </strong>
+
+        </div>
+
+
+        <div class="ru-attribute-row">
+
+          <span>HAB</span>
+
+          <div class="ru-attribute-track">
+            <div
+              class="ru-attribute-fill"
+              id="profileSkillBar"
+              style="width: 50%"
+            ></div>
+          </div>
+
+          <strong id="profileSkillValue">
+            50
+          </strong>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+      <!-- ESTATÍSTICAS -->
+
+      <section class="profile-statistics">
+        <article class="profile-stat-card">
+          <span>Ranking geral</span>
+
+          <strong>6º</strong>
+
+          <small>posição atual</small>
+        </article>
+
+        <article class="profile-stat-card">
+          <span>Pontuação total</span>
+
+          <strong>327,4</strong>
+
+          <small>pontos</small>
+        </article>
+
+        <article class="profile-stat-card">
+          <span>Média</span>
+
+          <strong>65,5</strong>
+
+          <small>pontos por rodada</small>
+        </article>
+
+        <article class="profile-stat-card">
+          <span>Rodadas</span>
+
+          <strong>5</strong>
+
+          <small>participações</small>
+        </article>
+      </section>
+
+      <!-- DESEMPENHO -->
+
+      <section class="profile-content-grid">
+        <div>
+          <div class="section-title">
+            <div>
+              <h2>Desempenho recente</h2>
+              <p>Suas últimas rodadas.</p>
+            </div>
+
+            <a href="rodadas.html"> Ver todas → </a>
+          </div>
+
+          <div class="profile-rounds">
+            <a href="rodada.html?rodada=5" class="profile-round-row">
+              <div class="profile-round-number">05</div>
+
+              <div class="profile-round-info">
+                <strong>Rodada 05</strong>
+
+                <span> 05 de setembro </span>
+              </div>
+
+              <div class="profile-round-position">
+                <strong>8º</strong>
+
+                <span>posição</span>
+              </div>
+
+              <div class="profile-round-score">
+                <strong>72,8</strong>
+
+                <span>pts</span>
+              </div>
+
+              <span class="profile-round-arrow"> → </span>
+            </a>
+
+            <div class="profile-round-row">
+              <div class="profile-round-number">04</div>
+
+              <div class="profile-round-info">
+                <strong>Rodada 04</strong>
+
+                <span> 29 de agosto </span>
+              </div>
+
+              <div class="profile-round-position">
+                <strong>9º</strong>
+
+                <span>posição</span>
+              </div>
+
+              <div class="profile-round-score">
+                <strong>70,2</strong>
+
+                <span>pts</span>
+              </div>
+            </div>
+
+            <div class="profile-round-row">
+              <div class="profile-round-number">03</div>
+
+              <div class="profile-round-info">
+                <strong>Rodada 03</strong>
+
+                <span> 22 de agosto </span>
+              </div>
+
+              <div class="profile-round-position">
+                <strong>13º</strong>
+
+                <span>posição</span>
+              </div>
+
+              <div class="profile-round-score">
+                <strong>61,3</strong>
+
+                <span>pts</span>
+              </div>
+            </div>
+
+            <div class="profile-round-row">
+              <div class="profile-round-number">02</div>
+
+              <div class="profile-round-info">
+                <strong>Rodada 02</strong>
+
+                <span> 15 de agosto </span>
+              </div>
+
+              <div class="profile-round-position">
+                <strong>11º</strong>
+
+                <span>posição</span>
+              </div>
+
+              <div class="profile-round-score">
+                <strong>64,7</strong>
+
+                <span>pts</span>
+              </div>
+            </div>
+
+            <div class="profile-round-row">
+              <div class="profile-round-number">01</div>
+
+              <div class="profile-round-info">
+                <strong>Rodada 01</strong>
+
+                <span> 08 de agosto </span>
+              </div>
+
+              <div class="profile-round-position">
+                <strong>14º</strong>
+
+                <span>posição</span>
+              </div>
+
+              <div class="profile-round-score">
+                <strong>58,4</strong>
+
+                <span>pts</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RESUMO -->
+
+        <aside>
+          <div class="section-title">
+            <div>
+              <h2>Resumo</h2>
+              <p>Seu desempenho no fantasy.</p>
+            </div>
+          </div>
+
+          <article class="profile-summary-card">
+            <span class="eyebrow"> MELHOR RESULTADO </span>
+
+            <strong class="profile-highlight-number"> 72,8 pts </strong>
+
+            <p>Rodada 05</p>
+
+            <div class="profile-summary-divider"></div>
+
+            <div class="profile-summary-row">
+              <span>Melhor posição</span>
+
+              <strong>8º</strong>
+            </div>
+
+            <div class="profile-summary-row">
+              <span>Total de pontos</span>
+
+              <strong>327,4</strong>
+            </div>
+
+            <div class="profile-summary-row">
+              <span>Média</span>
+
+              <strong>65,5 pts</strong>
+            </div>
+          </article>
+        </aside>
+      </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/jogadores.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

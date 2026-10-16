@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Racha Universitário | Ranking</title>
+    <meta name="description" content="Ranking geral e por rodada dos participantes do Racha Universitário.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Ranking">
+    <meta property="og:description" content="Ranking geral e por rodada dos participantes do Racha Universitário.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a href="home.html" class="logo">
+  <span data-app-sigla>RU</span>
+  <strong data-app-nome>Racha Universitário</strong>
+</a>
+
+      <nav class="navigation">
+        <a href="home.html"> Início </a>
+
+        <a href="escalar.html"> Escalar </a>
+
+        <a href="jogadores.html"> Jogadores </a>
+
+        <a href="rodadas.html"> Rodadas </a>
+
+        <a href="ranking.html" class="active"> Ranking </a>
+      </nav>
+
+      <a href="perfil.html" class="user-menu user-menu-link">
+        <div>
+  <strong id="rankingMenuName">Usuário</strong>
+  <small id="rankingMenuUsername">@usuario</small>
+</div>
+
+<div class="avatar" id="rankingMenuAvatar">RU</div>
+      </a>
+    </header>
+
+    <main class="container">
+      <section class="page-header">
+        <div>
+          <h1>Ranking</h1>
+
+          <p>
+  Compare sua pontuação com os outros participantes do Racha Universitário.
+</p>
+        </div>
+      </section>
+
+      <!-- ABAS -->
+
+      <div class="ranking-tabs">
+        <button type="button" class="ranking-tab active" data-ranking="geral">
+          Ranking Geral
+        </button>
+
+        <button type="button" class="ranking-tab" data-ranking="rodada">Rodada 05</button>
+      </div>
+
+      <!-- POSIÇÃO DO USUÁRIO -->
+
+      <section class="my-ranking-card">
+        <div>
+          <span class="eyebrow"> SUA POSIÇÃO </span>
+
+          <h2 id="myPosition">6º lugar</h2>
+
+          <p>
+  <span id="rankingUserName">Usuário</span>
+  <span id="rankingUsername">• @usuario</span>
+</p>
+        </div>
+
+        <div class="my-ranking-score">
+          <strong id="myScore"> 327,4 </strong>
+
+          <span id="myScoreLabel"> pontos no geral </span>
+        </div>
+      </section>
+
+      <!-- PÓDIO -->
+
+      <section class="podium-section">
+        <div class="section-title">
+          <div>
+            <h2>Top 3</h2>
+            <p>Melhores participantes.</p>
+          </div>
+        </div>
+
+        <div class="podium">
+          <!-- SEGUNDO -->
+
+          <div class="podium-user second">
+            <div class="podium-avatar">M</div>
+
+            <strong class="podium-name" id="secondName"> Mariana </strong>
+
+            <span class="podium-points" id="secondPoints"> 354,2 pts </span>
+
+            <div class="podium-position">2º</div>
+          </div>
+
+          <!-- PRIMEIRO -->
+
+          <div class="podium-user first">
+            <span class="crown"> ★ </span>
+
+            <div class="podium-avatar">R</div>
+
+            <strong class="podium-name" id="firstName"> Rafael </strong>
+
+            <span class="podium-points" id="firstPoints"> 361,8 pts </span>
+
+            <div class="podium-position">1º</div>
+          </div>
+
+          <!-- TERCEIRO -->
+
+          <div class="podium-user third">
+            <div class="podium-avatar">B</div>
+
+            <strong class="podium-name" id="thirdName"> Bruno </strong>
+
+            <span class="podium-points" id="thirdPoints"> 346,7 pts </span>
+
+            <div class="podium-position">3º</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLASSIFICAÇÃO -->
+
+      <section class="ranking-list-section">
+        <div class="section-title">
+          <div>
+            <h2>Classificação</h2>
+            <p id="rankingDescription">
+              Pontuação acumulada nas rodadas finalizadas.
+            </p>
+          </div>
+        </div>
+
+        <div class="ranking-list-header">
+          <span>#</span>
+
+          <span>Participante</span>
+
+          <span>Pontuação</span>
+        </div>
+
+        <div class="ranking-list" id="rankingList"></div>
+      </section>
+    </main>
+
+    <script src="js/config.js"></script>
+    <script src="js/jogadores.js"></script>
+    <script src="js/rodadas-data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

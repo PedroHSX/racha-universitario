@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Racha Universitário | Detalhes da Rodada</title>
+    <meta name="description" content="Detalhes de uma rodada do Racha Universitário: pontuação, escalação, destaques e ranking.">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:title" content="Racha Universitário | Detalhes da Rodada">
+    <meta property="og:description" content="Detalhes de uma rodada do Racha Universitário: pontuação, escalação, destaques e ranking.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Racha Universitário">
+    <meta property="og:locale" content="pt_BR">
+    <link rel="icon" type="image/svg+xml" href="imgs/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32.png">
+    <link rel="apple-touch-icon" href="imgs/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <a href="home.html" class="logo">
+  <span data-app-sigla>RU</span>
+  <strong data-app-nome>Racha Universitário</strong>
+</a>
+
+      <nav class="navigation">
+        <a href="home.html">Início</a>
+        <a href="escalar.html">Escalar</a>
+        <a href="jogadores.html">Jogadores</a>
+        <a href="rodadas.html" class="active">Rodadas</a>
+        <a href="ranking.html">Ranking</a>
+      </nav>
+
+      <a href="perfil.html" class="user-menu user-menu-link">
+        <div>
+          <strong>Usuário</strong>
+          <small>@usuario</small>
+        </div>
+
+        <div class="avatar">RU</div>
+      </a>
+    </header>
+
+    <main class="container">
+      <!-- VOLTAR -->
+
+      <a href="rodadas.html" class="back-link"> ← Voltar para rodadas </a>
+
+      <!-- CABEÇALHO -->
+
+      <section class="page-header">
+        <div>
+         <div class="round-title-line">
+  <h1 id="round-detail-title">
+    Rodada
+  </h1>
+
+  <span
+    class="status finished"
+    id="round-detail-status"
+  >
+    FINALIZADA
+  </span>
+</div>
+
+<p id="round-detail-date"></p>
+        </div>
+      </section>
+
+      <!-- RODADA INEXISTENTE, ABERTA OU SEM RESULTADOS -->
+
+      <section class="card round-status-message" id="roundStatusMessage" hidden>
+        <h2 id="roundStatusTitle">Rodada indisponível</h2>
+        <p id="roundStatusText"></p>
+        <a
+          id="roundStatusLink"
+          class="btn-primary link-button"
+          href="rodadas.html"
+        >
+          Ver todas as rodadas
+        </a>
+      </section>
+
+      <!-- RESULTADO DO USUÁRIO -->
+
+      <section class="round-result-main">
+        <div class="round-score-main">
+          <span class="eyebrow"> SUA PONTUAÇÃO </span>
+
+          <div class="big-score">
+  <span id="round-detail-score">
+    0,0
+  </span>
+
+  <span>pts</span>
+</div>
+
+<p id="round-detail-description"></p>
+        </div>
+
+        <div class="round-ranking-main">
+
+  <div>
+    <span>Posição na rodada</span>
+
+    <strong id="round-detail-position">
+      -
+    </strong>
+  </div>
+
+  <div>
+    <span>Pontuação</span>
+
+    <strong id="round-detail-score-secondary">
+      -
+    </strong>
+  </div>
+
+  <div>
+    <span>Ranking geral</span>
+
+    <strong id="round-detail-general-ranking">
+      -
+    </strong>
+  </div>
+
+</div>
+      </section>
+
+      <!-- ESCALAÇÃO -->
+
+      <section class="round-lineup-section">
+  <div class="section-title">
+    <div>
+      <h2>Sua escalação</h2>
+      <p>Pontuação individual dos jogadores escalados.</p>
+    </div>
+
+    <strong id="round-player-count">
+      0 / 7 jogadores
+    </strong>
+  </div>
+
+  <div class="round-lineup-layout">
+    <!-- CAMPO -->
+
+    <div
+      class="field round-finished-field"
+      id="round-lineup-field"
+    >
+      <div class="field-line center-line"></div>
+      <div class="center-circle"></div>
+
+      <div id="round-lineup-container"></div>
+    </div>
+
+    <!-- RESUMO -->
+
+    <aside class="round-summary-panel">
+      <span class="eyebrow">RESUMO</span>
+
+      <h2 id="summary-round-title">
+        Rodada
+      </h2>
+
+      <div class="summary-divider"></div>
+
+      <div class="summary-row">
+        <span>Jogadores</span>
+
+        <strong id="summary-player-count">
+          -
+        </strong>
+      </div>
+
+      <div class="summary-row">
+        <span>Pontuação</span>
+
+        <strong id="summary-score">
+          -
+        </strong>
+      </div>
+
+      <div class="summary-row">
+        <span>Posição</span>
+
+        <strong id="summary-position">
+          -
+        </strong>
+      </div>
+
+      <div class="summary-divider"></div>
+
+      <div class="best-player-summary">
+        <span>Maior pontuação da escalação</span>
+
+        <div>
+          <div
+            class="player-avatar"
+            id="summary-best-avatar"
+          >
+            -
+          </div>
+
+          <div>
+            <strong id="summary-best-name">
+              -
+            </strong>
+
+            <small id="summary-best-position">
+              -
+            </small>
+          </div>
+        </div>
+
+        <strong
+          class="summary-best-score"
+          id="summary-best-score"
+        >
+          -
+        </strong>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- DESTAQUES -->
+
+<section class="round-highlights-section">
+  <div class="section-title">
+    <div>
+      <h2>Destaques da rodada</h2>
+
+      <p id="roundHighlightsDescription">
+        Jogadores que se destacaram na rodada.
+      </p>
+    </div>
+  </div>
+
+  <div
+    class="round-highlights-grid"
+    id="roundHighlightsGrid"
+  ></div>
+</section>
+
+<!-- PRÉVIA RANKING -->
+
+<section class="round-ranking-preview">
+  <div class="section-title">
+    <div>
+      <h2 id="roundRankingTitle">
+        Ranking da rodada
+      </h2>
+
+      <p>
+        Confira sua posição entre os participantes.
+      </p>
+    </div>
+
+    <a href="ranking.html">
+      Ver ranking completo →
+    </a>
+  </div>
+
+  <div class="round-ranking-list" id="roundRankingList"></div>
+</section>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/jogadores.js"></script>
+<script src="js/rodadas-data.js"></script>
+<script src="js/script.js"></script>
+<script src="js/rodada.js"></script>
+</body>
+</html>
