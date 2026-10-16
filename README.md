@@ -51,8 +51,7 @@ O nome **Racha Universitário (RU)** identifica o projeto; sua moeda virtual é 
 
 ## Demonstração
 
-<!-- Depois da publicação, substitua o endereço pelo link real do seu GitHub Pages. -->
-**Demonstração online:** adicione aqui o endereço após a publicação no GitHub Pages.
+**Demonstração online:** [Acessar o Racha Universitário](https://PedroHSX.github.io/racha-universitario/)
 
 ### Desktop
 
